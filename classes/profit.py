@@ -12,4 +12,6 @@ class Profit:
             while i >= 0:
                 profits.append(self.values[index] - self.values[i])
                 i -= 1
-        return max(profits)
+        if len(profits) > 0:
+            return max(profits)
+        return 0
